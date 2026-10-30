@@ -93,7 +93,7 @@ public class HashTable<T> {
         entry.next=table.get(index);
         table.set(index,entry);
         size++;
-        if (size > capacity*0.75){
+        if (size > capacity*1){
             rehash();
         }
     }
